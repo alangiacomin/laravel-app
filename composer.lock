@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "009200c0258636c6fca700caec19f976",
+    "content-hash": "7c7da9b6f2bca4baeab21de88a8ed130",
     "packages": [
         {
             "name": "alangiacomin/laravel-base-pack",
@@ -2739,16 +2739,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.10",
+            "version": "v0.11.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "e9eadffbed9c9deb5426fd107faae0452bf20a36"
+                "reference": "ba67f2d26278ec9266a5cfe0acba33a8ca1277ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e9eadffbed9c9deb5426fd107faae0452bf20a36",
-                "reference": "e9eadffbed9c9deb5426fd107faae0452bf20a36",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ba67f2d26278ec9266a5cfe0acba33a8ca1277ae",
+                "reference": "ba67f2d26278ec9266a5cfe0acba33a8ca1277ae",
                 "shasum": ""
             },
             "require": {
@@ -2809,9 +2809,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.10"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.11"
             },
-            "time": "2022-12-23T17:47:18+00:00"
+            "time": "2023-01-23T16:14:59+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -3840,12 +3840,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0"
+                "reference": "de3acc2fbc81d26957b551aabeea8b6cb0dc1f72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0",
-                "reference": "2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/de3acc2fbc81d26957b551aabeea8b6cb0dc1f72",
+                "reference": "de3acc2fbc81d26957b551aabeea8b6cb0dc1f72",
                 "shasum": ""
             },
             "require": {
@@ -3912,7 +3912,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-13T09:23:11+00:00"
+            "time": "2023-01-23T14:48:49+00:00"
         },
         {
             "name": "symfony/mime",
@@ -6193,6 +6193,187 @@
             "time": "2023-01-03T12:54:54+00:00"
         },
         {
+            "name": "pestphp/pest",
+            "version": "v1.22.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest.git",
+                "reference": "b58a020423e9ad16c8bb8781927d516adae00da4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/b58a020423e9ad16c8bb8781927d516adae00da4",
+                "reference": "b58a020423e9ad16c8bb8781927d516adae00da4",
+                "shasum": ""
+            },
+            "require": {
+                "nunomaduro/collision": "^5.11.0|^6.3.0",
+                "pestphp/pest-plugin": "^1.1.0",
+                "php": "^7.3 || ^8.0",
+                "phpunit/phpunit": "^9.5.26"
+            },
+            "require-dev": {
+                "illuminate/console": "^8.83.26",
+                "illuminate/support": "^8.83.26",
+                "laravel/dusk": "^6.25.2",
+                "pestphp/pest-dev-tools": "^1.0.0",
+                "pestphp/pest-plugin-parallel": "^1.2"
+            },
+            "bin": [
+                "bin/pest"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "pest": {
+                    "plugins": [
+                        "Pest\\Plugins\\Coverage",
+                        "Pest\\Plugins\\Init",
+                        "Pest\\Plugins\\Version",
+                        "Pest\\Plugins\\Environment"
+                    ]
+                },
+                "laravel": {
+                    "providers": [
+                        "Pest\\Laravel\\PestServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Functions.php",
+                    "src/Pest.php"
+                ],
+                "psr-4": {
+                    "Pest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "An elegant PHP Testing Framework.",
+            "keywords": [
+                "framework",
+                "pest",
+                "php",
+                "test",
+                "testing",
+                "unit"
+            ],
+            "support": {
+                "issues": "https://github.com/pestphp/pest/issues",
+                "source": "https://github.com/pestphp/pest/tree/v1.22.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/enunomaduro",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/lukeraymonddowning",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/olivernybroe",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/owenvoke",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-12-07T14:31:55+00:00"
+        },
+        {
+            "name": "pestphp/pest-plugin",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest-plugin.git",
+                "reference": "606c5f79c6a339b49838ffbee0151ca519efe378"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin/zipball/606c5f79c6a339b49838ffbee0151ca519efe378",
+                "reference": "606c5f79c6a339b49838ffbee0151ca519efe378",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "conflict": {
+                "pestphp/pest": "<1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.4.2",
+                "pestphp/pest": "^1.22.1",
+                "pestphp/pest-dev-tools": "^1.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "class": "Pest\\Plugin\\Manager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pest\\Plugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Pest plugin manager",
+            "keywords": [
+                "framework",
+                "manager",
+                "pest",
+                "php",
+                "plugin",
+                "test",
+                "testing",
+                "unit"
+            ],
+            "support": {
+                "source": "https://github.com/pestphp/pest-plugin/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-09-18T13:18:17+00:00"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "2.0.3",
             "source": {
@@ -7751,20 +7932,20 @@
         },
         {
             "name": "spatie/flare-client-php",
-            "version": "1.3.2",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "609903bd154ba3d71f5e23a91c3b431fa8f71868"
+                "reference": "3e5dd5ac4928f3d2d036bd02de5eb83fd0ef1f42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/609903bd154ba3d71f5e23a91c3b431fa8f71868",
-                "reference": "609903bd154ba3d71f5e23a91c3b431fa8f71868",
+                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/3e5dd5ac4928f3d2d036bd02de5eb83fd0ef1f42",
+                "reference": "3e5dd5ac4928f3d2d036bd02de5eb83fd0ef1f42",
                 "shasum": ""
             },
             "require": {
-                "illuminate/pipeline": "^8.0|^9.0",
+                "illuminate/pipeline": "^8.0|^9.0|^10.0",
                 "php": "^8.0",
                 "spatie/backtrace": "^1.2",
                 "symfony/http-foundation": "^5.0|^6.0",
@@ -7808,7 +7989,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-                "source": "https://github.com/spatie/flare-client-php/tree/1.3.2"
+                "source": "https://github.com/spatie/flare-client-php/tree/1.3.5"
             },
             "funding": [
                 {
@@ -7816,26 +7997,25 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-26T14:36:46+00:00"
+            "time": "2023-01-23T15:58:46+00:00"
         },
         {
             "name": "spatie/ignition",
-            "version": "1.4.1",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "dd3d456779108d7078baf4e43f8c2b937d9794a1"
+                "reference": "2cf3833220cfe8fcf639544f8d7067b6469a00b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/dd3d456779108d7078baf4e43f8c2b937d9794a1",
-                "reference": "dd3d456779108d7078baf4e43f8c2b937d9794a1",
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/2cf3833220cfe8fcf639544f8d7067b6469a00b0",
+                "reference": "2cf3833220cfe8fcf639544f8d7067b6469a00b0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "monolog/monolog": "^2.0",
                 "php": "^8.0",
                 "spatie/flare-client-php": "^1.1",
                 "symfony/console": "^5.4|^6.0",
@@ -7891,7 +8071,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-26T11:51:15+00:00"
+            "time": "2023-01-23T15:28:32+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
