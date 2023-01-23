@@ -1,0 +1,13 @@
+form {
+  .form-floating {
+    margin-top: 10px;
+
+    :focus-within {
+      z-index: 2;
+    }
+  }
+
+  .error {
+    color: $red;
+  }
+}
