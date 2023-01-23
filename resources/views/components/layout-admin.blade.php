@@ -17,8 +17,8 @@
 ])
 </head>
 <body>
-<div @class(['container'])>
-    <x-header-admin/>
+<x-header-admin/>
+<div @class(['container-fluid'])>
     {{ $slot }}
 </div>
 </body>

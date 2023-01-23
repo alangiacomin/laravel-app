@@ -26,7 +26,7 @@ class BusMonitorService extends Service implements IBusMonitorService
             type: LogType::Exception ?? LogType::Info,
             object_id: $obj->id,
             class: $obj->class(),
-            payload: $obj->payload(),
+            payload: $ex->getMessage(),
         );
     }
 
