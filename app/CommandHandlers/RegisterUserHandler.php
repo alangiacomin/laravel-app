@@ -53,12 +53,14 @@ class RegisterUserHandler extends CommandHandler
             throw new AuthException(__('auth.password'));
         }
 
-        $createdUser = User::create([
-            'first_name' => $this->command->first_name,
-            'last_name' => $this->command->last_name,
-            'email' => $this->command->email,
-            'password' => Hash::make($this->command->password),
-        ]);
+        $createdUser = User::create(
+            [
+                'first_name' => $this->command->first_name,
+                'last_name' => $this->command->last_name,
+                'email' => $this->command->email,
+                'password' => Hash::make($this->command->password),
+            ]
+        );
 
         if ($createdUser == null)
         {

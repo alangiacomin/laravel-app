@@ -55,16 +55,21 @@ class Header extends Component
         $this->user = auth()->user();
         $logged = $this->user != null;
 
-        $this->links = array_map(function ($link) {
-            return [
-                ...$link,
-                'route' => route($link['route']),
-                'active' => Request::routeIs($link['route']),
-            ];
-        },
-            array_filter($this->linkConfiguration, function ($link) use ($logged) {
-                return empty($link['perm']) || ($logged && $this->user->can($link['perm']));
-            }));
+        $this->links = array_map(
+            function ($link) {
+                return [
+                    ...$link,
+                    'route' => route($link['route']),
+                    'active' => Request::routeIs($link['route']),
+                ];
+            },
+            array_filter(
+                $this->linkConfiguration,
+                function ($link) use ($logged) {
+                    return empty($link['perm']) || ($logged && $this->user->can($link['perm']));
+                }
+            )
+        );
 
         return view('components.header');
     }

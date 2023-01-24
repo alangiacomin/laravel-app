@@ -8,6 +8,8 @@ use App\Core\Enum\Permission;
 
 class AdminController extends Controller
 {
+    public IBusLogRepository $busLogRepository;
+
     protected array $cfgMiddleware = [
         'protected' => ['auth', 'verified'],
     ];
@@ -15,8 +17,6 @@ class AdminController extends Controller
     protected array $cfgPermission = [
         'protected' => [Permission::AdminIndex],
     ];
-
-    public IBusLogRepository $busLogRepository;
 
     public function index()
     {

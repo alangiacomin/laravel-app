@@ -27,13 +27,15 @@ class RegisterForm extends Component
         $this->validate();
 
         $ret = $this->execute(
-            new RegisterUser([
-                'first_name' => $this->first_name,
-                'last_name' => $this->last_name,
-                'email' => $this->email,
-                'password' => $this->password,
-                'password_confirmation' => $this->password_confirmation,
-            ])
+            new RegisterUser(
+                [
+                    'first_name' => $this->first_name,
+                    'last_name' => $this->last_name,
+                    'email' => $this->email,
+                    'password' => $this->password,
+                    'password_confirmation' => $this->password_confirmation,
+                ]
+            )
         );
 
         if ($ret->success)
