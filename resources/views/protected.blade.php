@@ -1,6 +1,6 @@
 @section('title', __('protected.title'))
 <x-layout>
-    <div>
-        {{ __('protected.hello_world') }}
-    </div>
+    <h1>
+        {!! __('protected.hello_world') !!}
+    </h1>
 </x-layout>

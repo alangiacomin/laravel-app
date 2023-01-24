@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Alangiacomin\LaravelBasePack\Commands\Command;
 
-class EseguiLogin extends Command
+class ExecuteLogin extends Command
 {
     /**
      * Email

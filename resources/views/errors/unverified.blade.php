@@ -1,10 +1,10 @@
 <x-layout>
-    <p>DEVI PRIMA ATTIVARE L'ACCOUNT</p>
+    <p>{!! __('auth.must_activate_account') !!}</p>
     <form method="post" action="{{ route('verification.send') }}">
         @csrf
-        <button type="submit">Rimanda link</button>
+        <button type="submit">{!! __('auth.send_link_again') !!}</button>
     </form>
     <div>
-        {{ Session::get('message') }}
+        {!! Session::get('message') !!}
     </div>
 </x-layout>

@@ -4,21 +4,21 @@
 namespace App\CommandHandlers;
 
 use Alangiacomin\LaravelBasePack\CommandHandlers\CommandHandler;
-use App\Commands\EseguiLogin;
+use App\Commands\ExecuteLogin;
 use App\Exceptions\AuthException;
 use App\Models\User;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
-class EseguiLoginHandler extends CommandHandler
+class ExecuteLoginHandler extends CommandHandler
 {
     /**
      * The command
      *
      * @return  void
      */
-    public EseguiLogin $command;
+    public ExecuteLogin $command;
 
     /**
      * Internal working prop
@@ -41,7 +41,8 @@ class EseguiLoginHandler extends CommandHandler
         ];
 
         $validator = Validator::make(
-            $credentials, [
+            $credentials,
+            [
                 'email' => ['required', 'email'],
                 'password' => ['required'],
             ]

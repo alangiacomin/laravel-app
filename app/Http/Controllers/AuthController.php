@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Alangiacomin\LaravelBasePack\Controllers\Controller;
-use App\Commands\EseguiLogout;
+use App\Commands\ExecuteLogout;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -32,7 +32,7 @@ class AuthController extends Controller
     {
         if (Auth::user())
         {
-            $ret = $this->execute(new EseguiLogout());
+            $ret = $this->execute(new ExecuteLogout());
             if ($ret->success)
             {
                 return redirect()->route('home');

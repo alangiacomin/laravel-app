@@ -1,4 +1,4 @@
 @section('title', __('auth.unauthorized'))
 <x-layout>
-    NON HAI I PERMESSI PER QUESTA PAGINA
+    <h1>{!! __('auth.unauthorized_for_page') !!}</h1>
 </x-layout>

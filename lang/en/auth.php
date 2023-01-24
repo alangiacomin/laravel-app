@@ -23,6 +23,9 @@ return [
     'login' => 'Login',
     'sign_in' => 'Sign in',
     'unauthorized' => 'Unauthorized',
+    'unauthorized_for_page' => 'You\'re not allowed to access this section',
+    'must_activate_account' => 'You must activate your account before entering this section',
+    'send_link_again'=>'Send link again',
 
     'fields' => [
         'first_name' => 'First name',

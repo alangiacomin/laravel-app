@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
-use App\Commands\EseguiLogin;
+use App\Commands\ExecuteLogin;
 use App\Http\Livewire\Core\Component;
 use App\Http\ValidatorRules;
 use Illuminate\Http\RedirectResponse;
@@ -21,10 +21,12 @@ class LoginForm extends Component
         $this->validate();
 
         $ret = $this->execute(
-            new EseguiLogin([
-                'email' => $this->email,
-                'password' => $this->password,
-            ])
+            new ExecuteLogin(
+                [
+                    'email' => $this->email,
+                    'password' => $this->password,
+                ]
+            )
         );
 
         if ($ret->success)

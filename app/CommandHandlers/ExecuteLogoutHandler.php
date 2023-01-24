@@ -4,18 +4,18 @@
 namespace App\CommandHandlers;
 
 use Alangiacomin\LaravelBasePack\CommandHandlers\CommandHandler;
-use App\Commands\EseguiLogout;
+use App\Commands\ExecuteLogout;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
-class EseguiLogoutHandler extends CommandHandler
+class ExecuteLogoutHandler extends CommandHandler
 {
     /**
      * The command
      *
      * @return  void
      */
-    public EseguiLogout $command;
+    public ExecuteLogout $command;
 
     /**
      * Execute the command
