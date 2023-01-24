@@ -7,6 +7,10 @@
 
 Laravel application with [Laravel base pack](https://github.com/alangiacomin/laravel-base-pack) installed.
 
+Useful for starting new projects.
+
+Demo app can be found [here](https://github.com/alangiacomin/laravel-app-demo).
+
 ## Requirements
 
 - PHP >= 8.1
